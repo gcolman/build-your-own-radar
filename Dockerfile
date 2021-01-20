@@ -1,4 +1,4 @@
-FROM ubi8/s2i-base:rhel8.3 as source
+FROM ubi8/nodejs-10 as source
 WORKDIR /src/build-your-own-radar
 COPY package.json ./
 RUN npm install
