@@ -9,4 +9,5 @@ FROM registry.redhat.io/rhel8/nginx-116
 WORKDIR /opt/build-your-own-radar
 COPY --from=source /src/build-your-own-radar/dist .
 COPY default.template /etc/nginx/conf.d/default.conf
+COPY default.template /opt/app-root/etc/nginx.d/default.conf
 CMD ["nginx", "-g", " daemon off;"]
