@@ -8,4 +8,5 @@ COPY package.json /opt/app-root/
 WORKDIR /opt/app-root/
 
 RUN npm install
+COPY . ./
 RUN npm run build
