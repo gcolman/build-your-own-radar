@@ -1,4 +1,5 @@
-FROM registry.redhat.io/ubi8/nodejs-10
+FROM node:10.15.3
+#FROM registry.redhat.io/ubi8/nodejs-10
 USER 0
 ADD src /opt/app-root/src
 RUN chown -R 1001:0 /opt/app-root/
