@@ -36,16 +36,6 @@ parameters:
     required: true
     from: '[a-zA-Z0-9]{40}'
     generate: expression
-  - name: CLIENT_ID
-    description: Google client ID for access to provaste google sheet.
-    displayName: Google Client ID
-    required: false
-    from: '[a-zA-Z0-9]{40}'
-  - name: API_KEY
-    description: Google API Key usedc to access google sheet
-    displayName: Google API Key
-    required: false
-    from: '[a-zA-Z0-9]{40}'
 objects:
 - apiVersion: v1
   kind: ImageStream
